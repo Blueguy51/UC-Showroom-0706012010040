@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct MotorDetailView: View {
+    let motorbike: MotorbikeEntity
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VehicleDetailView(vehicle: motorbike)
+            
+            Text("Fuel Capacity: \(motorbike.getFuelCapacityInLiters()) Liters")
+                .font(.subheadline)
+
+            Text("Baggage Size: \(motorbike.baggageSize)")
+                .font(.subheadline)
+
+        }
     }
 }
 
-#Preview {
-    MotorDetailView()
-}
+

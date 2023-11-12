@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct CustomerDetailView: View {
+    let customer: CustomerEntity
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Name: \(customer.name ?? "")")
+                .font(.title)
+            
+            Text("Address: \(customer.getFullAddress())")
+                .font(.subheadline)
+        }
     }
 }
 
-#Preview {
-    CustomerDetailView()
-}
+
+

@@ -16,6 +16,21 @@
 		742ABA5C2B00211000E84597 /* UC_ShowroomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA5B2B00211000E84597 /* UC_ShowroomTests.swift */; };
 		742ABA662B00211000E84597 /* UC_ShowroomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA652B00211000E84597 /* UC_ShowroomUITests.swift */; };
 		742ABA682B00211000E84597 /* UC_ShowroomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA672B00211000E84597 /* UC_ShowroomUITestsLaunchTests.swift */; };
+		742ABA7E2B006B2000E84597 /* CustomerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA7D2B006B2000E84597 /* CustomerFormView.swift */; };
+		742ABA802B006B3800E84597 /* VehicleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA7F2B006B3800E84597 /* VehicleSelectionView.swift */; };
+		742ABA822B006B4B00E84597 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA812B006B4B00E84597 /* OrdersView.swift */; };
+		742ABA842B006D1B00E84597 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA832B006D1B00E84597 /* Customer.swift */; };
+		742ABA862B006D7600E84597 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA852B006D7600E84597 /* Vehicle.swift */; };
+		742ABA882B006DA700E84597 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA872B006DA700E84597 /* Order.swift */; };
+		742ABA8A2B0076B800E84597 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA892B0076B800E84597 /* Purchase.swift */; };
+		742ABA8C2B00782F00E84597 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA8B2B00782F00E84597 /* Car.swift */; };
+		742ABA8E2B00785400E84597 /* Motor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA8D2B00785400E84597 /* Motor.swift */; };
+		742ABA902B00787400E84597 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA8F2B00787400E84597 /* Truck.swift */; };
+		742ABA922B007F5100E84597 /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA912B007F5100E84597 /* VehicleDetailView.swift */; };
+		742ABA942B007F8C00E84597 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA932B007F8C00E84597 /* CarDetailView.swift */; };
+		742ABA962B00824600E84597 /* CustomerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA952B00824600E84597 /* CustomerDetailView.swift */; };
+		742ABA982B00828100E84597 /* TruckDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA972B00828100E84597 /* TruckDetailView.swift */; };
+		742ABA9A2B0082A200E84597 /* MotorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742ABA992B0082A200E84597 /* MotorDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +65,21 @@
 		742ABA612B00211000E84597 /* UC-ShowroomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UC-ShowroomUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		742ABA652B00211000E84597 /* UC_ShowroomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UC_ShowroomUITests.swift; sourceTree = "<group>"; };
 		742ABA672B00211000E84597 /* UC_ShowroomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UC_ShowroomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		742ABA7D2B006B2000E84597 /* CustomerFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFormView.swift; sourceTree = "<group>"; };
+		742ABA7F2B006B3800E84597 /* VehicleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSelectionView.swift; sourceTree = "<group>"; };
+		742ABA812B006B4B00E84597 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		742ABA832B006D1B00E84597 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		742ABA852B006D7600E84597 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		742ABA872B006DA700E84597 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		742ABA892B0076B800E84597 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		742ABA8B2B00782F00E84597 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		742ABA8D2B00785400E84597 /* Motor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motor.swift; sourceTree = "<group>"; };
+		742ABA8F2B00787400E84597 /* Truck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		742ABA912B007F5100E84597 /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
+		742ABA932B007F8C00E84597 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		742ABA952B00824600E84597 /* CustomerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailView.swift; sourceTree = "<group>"; };
+		742ABA972B00828100E84597 /* TruckDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDetailView.swift; sourceTree = "<group>"; };
+		742ABA992B0082A200E84597 /* MotorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +130,13 @@
 		742ABA422B00210F00E84597 /* UC-Showroom */ = {
 			isa = PBXGroup;
 			children = (
+				742ABA522B00211000E84597 /* Info.plist */,
 				742ABA432B00210F00E84597 /* UC_ShowroomApp.swift */,
-				742ABA452B00210F00E84597 /* ContentView.swift */,
+				742ABA792B006A8500E84597 /* Models */,
+				742ABA782B006A7D00E84597 /* Views */,
 				742ABA472B00211000E84597 /* Assets.xcassets */,
 				742ABA4C2B00211000E84597 /* Persistence.swift */,
 				742ABA512B00211000E84597 /* UC_Showroom.entitlements */,
-				742ABA522B00211000E84597 /* Info.plist */,
 				742ABA4E2B00211000E84597 /* UC_Showroom.xcdatamodeld */,
 				742ABA492B00211000E84597 /* Preview Content */,
 			);
@@ -135,6 +166,36 @@
 				742ABA672B00211000E84597 /* UC_ShowroomUITestsLaunchTests.swift */,
 			);
 			path = "UC-ShowroomUITests";
+			sourceTree = "<group>";
+		};
+		742ABA782B006A7D00E84597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				742ABA452B00210F00E84597 /* ContentView.swift */,
+				742ABA7D2B006B2000E84597 /* CustomerFormView.swift */,
+				742ABA7F2B006B3800E84597 /* VehicleSelectionView.swift */,
+				742ABA812B006B4B00E84597 /* OrdersView.swift */,
+				742ABA912B007F5100E84597 /* VehicleDetailView.swift */,
+				742ABA932B007F8C00E84597 /* CarDetailView.swift */,
+				742ABA952B00824600E84597 /* CustomerDetailView.swift */,
+				742ABA972B00828100E84597 /* TruckDetailView.swift */,
+				742ABA992B0082A200E84597 /* MotorDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		742ABA792B006A8500E84597 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				742ABA832B006D1B00E84597 /* Customer.swift */,
+				742ABA852B006D7600E84597 /* Vehicle.swift */,
+				742ABA872B006DA700E84597 /* Order.swift */,
+				742ABA892B0076B800E84597 /* Purchase.swift */,
+				742ABA8B2B00782F00E84597 /* Car.swift */,
+				742ABA8D2B00785400E84597 /* Motor.swift */,
+				742ABA8F2B00787400E84597 /* Truck.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +328,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742ABA8A2B0076B800E84597 /* Purchase.swift in Sources */,
+				742ABA862B006D7600E84597 /* Vehicle.swift in Sources */,
+				742ABA942B007F8C00E84597 /* CarDetailView.swift in Sources */,
+				742ABA8C2B00782F00E84597 /* Car.swift in Sources */,
+				742ABA822B006B4B00E84597 /* OrdersView.swift in Sources */,
+				742ABA882B006DA700E84597 /* Order.swift in Sources */,
 				742ABA4D2B00211000E84597 /* Persistence.swift in Sources */,
+				742ABA922B007F5100E84597 /* VehicleDetailView.swift in Sources */,
 				742ABA502B00211000E84597 /* UC_Showroom.xcdatamodeld in Sources */,
+				742ABA842B006D1B00E84597 /* Customer.swift in Sources */,
 				742ABA462B00210F00E84597 /* ContentView.swift in Sources */,
+				742ABA982B00828100E84597 /* TruckDetailView.swift in Sources */,
+				742ABA9A2B0082A200E84597 /* MotorDetailView.swift in Sources */,
+				742ABA7E2B006B2000E84597 /* CustomerFormView.swift in Sources */,
+				742ABA802B006B3800E84597 /* VehicleSelectionView.swift in Sources */,
 				742ABA442B00210F00E84597 /* UC_ShowroomApp.swift in Sources */,
+				742ABA962B00824600E84597 /* CustomerDetailView.swift in Sources */,
+				742ABA8E2B00785400E84597 /* Motor.swift in Sources */,
+				742ABA902B00787400E84597 /* Truck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

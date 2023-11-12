@@ -5,14 +5,23 @@
 //  Created by Timothyus Kevin Dewanto on 12/11/23.
 //
 
-import SwiftUI
+import Foundation
+import CoreData
 
-struct Truck: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@objc(TruckEntity)
+public class TruckEntity: VehicleEntity {
+    @NSManaged public var wheelCount: Int16
+    @NSManaged public var cargoArea: Decimal
+    
+    func getCargoAreaInCubicMeters() -> Double {
+        return NSDecimalNumber(decimal: cargoArea).doubleValue
     }
+    
+    //Relationships
+    @NSManaged public override var purchase: PurchaseEntity?
 }
 
-#Preview {
-    Truck()
+extension TruckEntity {
+    
 }
+

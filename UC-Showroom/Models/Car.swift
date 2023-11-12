@@ -5,14 +5,23 @@
 //  Created by Timothyus Kevin Dewanto on 12/11/23.
 //
 
-import SwiftUI
+import Foundation
+import CoreData
 
-struct Car: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@objc(CarEntity)
+public class CarEntity: VehicleEntity {
+    @NSManaged public var fuelType: String?
+    @NSManaged public var trunkSize: Decimal
+    
+    func getTrunkSizeInLiters() -> Double {
+        return NSDecimalNumber(decimal: trunkSize).doubleValue
     }
+    
+    //Relationships
+    @NSManaged public override var purchase: PurchaseEntity?
 }
 
-#Preview {
-    Car()
+extension CarEntity {
+    
 }
+

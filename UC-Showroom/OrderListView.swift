@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct OrderListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Order.timestamp, ascending: true)],
+        animation: .default)
+    private var orders: FetchedResults<Order>
 
-#Preview {
-    OrderListView()
+    var body: some View {
+        List {
+            ForEach(orders) { order in
+                Text("Order ID: \(order.id?.uuidString ?? "")")
+            }
+        }
+        .navigationTitle("Orders")
+    }
 }

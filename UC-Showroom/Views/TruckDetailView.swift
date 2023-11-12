@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct TruckDetailView: View {
+    let truck: TruckEntity
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VehicleDetailView(vehicle: truck)
+            
+            Text("Cargo Area: \(truck.getCargoAreaInCubicMeters()) Cubic Meters")
+                .font(.subheadline)
+            
+            Text("Wheel Count: \(truck.wheelCount)")
+                .font(.subheadline)
+        }
     }
 }
 
-#Preview {
-    TruckDetailView()
-}

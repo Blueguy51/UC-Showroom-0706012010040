@@ -5,14 +5,29 @@
 //  Created by Timothyus Kevin Dewanto on 12/11/23.
 //
 
-import SwiftUI
+import Foundation
+import CoreData
 
-struct Order: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@objc(Order)
+public class Order: NSManagedObject {
+    @NSManaged public var id: UUID
+    @NSManaged public var date: Date
+    @NSManaged public var customer: Customer?
+    @NSManaged public var vehicle: Vehicle?
+}
+
+extension Order {
+    public var wrappedDate: Date {
+        date 
     }
 }
 
-#Preview {
-    Order()
+extension DateFormatter {
+    static let shortDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        return formatter
+    }()
 }
+

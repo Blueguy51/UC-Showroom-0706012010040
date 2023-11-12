@@ -5,14 +5,32 @@
 //  Created by Timothyus Kevin Dewanto on 12/11/23.
 //
 
-import SwiftUI
+import Foundation
+import CoreData
 
-struct Customer: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+@objc(CustomerEntity)
+public class CustomerEntity: NSManagedObject {
+    @NSManaged public var name: String?
+    @NSManaged public var address: String?
+    @NSManaged public var phoneNumber: String?
+    @NSManaged public var idCard: String?
+
+    func getFullAddress() -> String {
+          var fullAddress = ""
+          if let address = address {
+              fullAddress += address
+          }
+          if let phoneNumber = phoneNumber {
+              fullAddress += " | " + phoneNumber
+          }
+          return fullAddress
+      }
+    
+    // Relationships
+    @NSManaged public var mpurchase: PurchaseEntity?
 }
 
-#Preview {
-    Customer()
+extension CustomerEntity {
+    
 }
+

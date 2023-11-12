@@ -5,14 +5,25 @@
 //  Created by Timothyus Kevin Dewanto on 12/11/23.
 //
 
-import SwiftUI
+import Foundation
+import CoreData
 
-struct Purchase: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+@objc(PurchaseEntity)
+public class PurchaseEntity: NSManagedObject {
+    @NSManaged public var date: Date?
+    @NSManaged public var quantity: Int16
+    @NSManaged public var totalPrice: Decimal
+    
+    func getFormattedQuantity() -> String {
+           return "\(quantity)"
+       }
+    
+    //Relationships
+    @NSManaged public var customer: CustomerEntity?
+    @NSManaged public var vehicles: NSSet?
 }
 
-#Preview {
-    Purchase()
+extension PurchaseEntity {
+    
 }
+

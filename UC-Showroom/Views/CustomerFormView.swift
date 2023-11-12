@@ -6,13 +6,48 @@
 //
 
 import SwiftUI
+import CoreData
 
-struct CostumerFormView: View {
+struct CustomerFormView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @State private var name: String = ""
+    @State private var address: String = ""
+    @State private var phone: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section(header: Text("Customer Details")) {
+                TextField("Name", text: $name)
+                
+            }
+            
+            Section {
+                Button("Save") {
+                    saveCustomer()
+                }
+            }
+        }
+        .navigationBarTitle("Customer Form")
+    }
+    
+    func saveCustomer() {
+        let newCustomer = Customer(context: viewContext)
+        
+        do {
+            try viewContext.save()
+        } catch {
+            print("Error saving customer: \(error.localizedDescription)")
+        }
+        
+        name = ""
+        address = ""
+        phone = ""
     }
 }
 
-#Preview {
-    CostumerFormView()
+struct CustomerFormView_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomerFormView()
+    }
 }
